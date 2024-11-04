@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Network Speed Test</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Network Speed Test</h1>
+        <button class="cybr-btn" id="startTest">Start Speed Test<span aria-hidden="true">_</span>
+            <span aria-hidden="true" class="cybr-btn__tag">R25</span></button>
+        <div id="result">
+            <p>Download Speed: <span id="downloadSpeed">0</span> Mbps</p>
+            <p>Upload Speed: <span id="uploadSpeed">0</span> Mbps</p>
+            <p id="timestamp"></p>
+        </div>
+        <button class="cybr-btn" id="downloadLog">Download Log<span aria-hidden="true">_</span>
+            <span aria-hidden="true" class="cybr-btn__tag">R25</span></button>
+        <div class="progress-bar-container" id="progressContainer" style="display: none;">
+            <div class="progress-bar" id="progressBar"></div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
